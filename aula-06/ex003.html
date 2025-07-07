@@ -9,16 +9,17 @@
 <body>
    <h1>Olá, Mundo!</h1> 
 
-   <p>Já me livrei da maldição!</p>
+   <p>Já me livrei da maldição!</p> <!-- comentário em HTML-->
 
    <script>
-   var n1 = Number(window.prompt('Digite um numero: '))
+        var n1 = Number.parseFloat(window.prompt('Digite um número'))
+        var n2 = Number.parseFloat(window.prompt('Digite outro número'))
+        var sum = (n1+n2)
+        var rslt = window.alert(`A soma entre ${n1} e ${n2} resulta em: `+ sum)
 
-   var n2 = Number(window.prompt('Digite outro numero: '))
+        // (number + number) para adição
+        // (string + string) para concatenação
 
-   var s = n1 + n2
-   
-   window.alert(`A soma entre ${n1} e ${n2} resulta em ${s}`)
    </script>
 </body>
 </html>
